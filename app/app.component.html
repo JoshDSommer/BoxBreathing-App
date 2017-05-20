@@ -1,0 +1,7 @@
+<StackLayout *ngIf="breathing">
+	<breathing [currentStep]="step$ | async"></breathing>
+	<Button text="Stop" (tap)="breathing = false"></Button>
+</StackLayout>
+<StackLayout *ngIf="!breathing">
+	<Button text="Start" (tap)="breathing = true"></Button>
+</StackLayout>

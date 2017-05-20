@@ -1,0 +1,6 @@
+<StackLayout [ngSwitch]="currentStep" >
+	<Label class="h1 text-center" *ngSwitchCase="Steps.Inhale" text="Breath In" textWrap="true"></Label>
+	<Label class="h1 text-center" *ngSwitchCase="Steps.HoldIn" text="Hold that breath in" textWrap="true"></Label>
+	<Label class="h1 text-center" *ngSwitchCase="Steps.Exhale" text="Exhale" textWrap="true"></Label>
+	<Label class="h1 text-center" *ngSwitchCase="Steps.HoldEmpty" text="Hold that breath out" textWrap="true"></Label>
+</StackLayout>
